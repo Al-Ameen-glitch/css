@@ -1,0 +1,202 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #5873bd;
+      margin: 40px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a237e;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 2.8rem;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    h2 {
+      color: #1565c0;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #1565c0;
+      padding-bottom: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .ai-tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #1565c0;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 15px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      user-select: none;
+      box-shadow: 0 3px 6px rgba(21, 101, 192, 0.5);
+    }
+
+    .ai-image {
+      float: left;
+      width: 130px;
+      height: 130px;
+      margin-right: 25px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(21, 101, 192, 0.3);
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .overflow-example {
+      max-width: 320px;
+      height: 110px;
+      overflow: auto;
+      background: #e3f2fd;
+      border: 2px dashed #90caf9;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: #0d47a1;
+      user-select: text;
+    }
+
+    form.contact-form {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      gap: 18px;
+    }
+
+    form.contact-form input,
+    form.contact-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1.8px solid #90caf9;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    form.contact-form input:focus,
+    form.contact-form textarea:focus {
+      outline: none;
+      border-color: #1565c0;
+      box-shadow: 0 0 6px #90caf9;
+    }
+
+    form.contact-form button {
+      background-color: #1565c0;
+      border: none;
+      color: #fff;
+      padding: 14px 0;
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form.contact-form button:hover {
+      background-color: #0d3c91;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 6px 0;
+      color: #444;
+    }
+
+    a {
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .z-box1,
+    .z-box2 {
+      position: absolute;
+      border-radius: 12px;
+      width: 140px;
+      height: 140px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .z-box1 {
+      top: 590px;
+      left: 35px;
+      background-color: #ef5350;
+      z-index: 1;
+    }
+
+    .z-box2 {
+      top: 620px;
+      left: 70px;
+      background-color: #43a047;
+      z-index: 2;
+    }
+
+    footer {
+      margin-top: 110px;
+      text-align: center;
+      background: #1565c0;
+      color: #fff;
+      padding: 20px 15px;
+      border-radius: 12px;
+      font-size: 1rem;
+      user-select: none;
+    }
+
+    .social-links {
+      margin: 10px 0 5px;
+    }
+
+    .social-links a {
+      color: #bbdefb;
+      margin: 0 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #e3f2fd;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 20px;
+      }
+
+      .ai-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+
+      .z-box1, .z-box2 {
+        display: none;
+      }
+    }
